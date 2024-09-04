@@ -1,0 +1,48 @@
+# Pliki i katalogi ignorowane przez Git
+
+# Katalogi wirtualne
+venv/
+env/
+.venv/
+
+# Pliki tymczasowe
+*.pyc
+*.pyo
+*.pyd
+*.egg-info
+*.dist-info
+*.build
+*.egg
+
+# Pliki konfiguracyjne
+*.cfg
+*.ini
+*.yaml
+*.yml
+
+# Pliki logów
+*.log
+*.out
+*.err
+
+# Pliki IDE
+.vscode/
+.pydevproject
+.idea/
+.spyderproject
+.spyder.ini
+
+# Inne
+__pycache__/
+.DS_Store
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Pliki generowane przez pip
+requirements.txt
+requirements-dev.txt
+requirements-test.txt
+setup.cfg
+setup.py
+tox.ini
