@@ -40,9 +40,6 @@ ehthumbs.db
 ehthumbs_vista.db
 
 # Pliki generowane przez pip
-requirements.txt
-requirements-dev.txt
-requirements-test.txt
 setup.cfg
 setup.py
 tox.ini
