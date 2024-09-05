@@ -27,7 +27,7 @@ def generate_image(prompt, seed, randomize_seed, width, height, guidance_scale, 
 
 # st.title("Generator obrazków")
 st.markdown("[![100pa.com](https://www.100pa.com/images/logo.png)](https://100pa.com/)")
-st.write("# 🖼️ 🎨 AI Image Generator")
+st.write("# 🖼️ 🎨 AI Image Generator") 
 
 prompt = st.text_area("Prompt, write what you would like to see in the picture", height=10)
 
