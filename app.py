@@ -27,7 +27,7 @@ def generate_image(prompt, seed, randomize_seed, width, height, guidance_scale, 
 
 # st.title("Generator obrazków")
 st.markdown("[![100pa.com](https://www.100pa.com/images/logo.png)](https://100pa.com/)")
-st.write("# 🖼️ AI Image Generator")
+st.write("# 🖼️ 🎨 AI Image Generator")
 
 prompt = st.text_area("Prompt, write what you would like to see in the picture", height=10)
 
@@ -42,6 +42,7 @@ width = col5.slider("Width", 512, 2048, 1024, 128)
 height = col6.slider("Height", 512, 2048, 1024, 128)
 
 if st.button("Generate image"):
-    image = generate_image(prompt, seed, randomize_seed, width, height, guidance_scale, num_inference_steps)
-    if image is not None:
-        st.image(image)
+    with st.spinner("Image is being generated..."):
+        image = generate_image(prompt, seed, randomize_seed, width, height, guidance_scale, num_inference_steps)
+        if image is not None:
+            st.image(image)
