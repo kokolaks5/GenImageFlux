@@ -2,6 +2,8 @@ import streamlit as st
 from gradio_client import Client
 # from gradio_client.exceptions import AppError
 
+st.set_page_config(page_title="Image generator AI", page_icon="🎨")
+
 client = Client("multimodalart/FLUX.1-merged")
 
 def generate_image(prompt, seed, randomize_seed, width, height, guidance_scale, num_inference_steps):

@@ -1,0 +1,4 @@
+Tworzenie wirtualnych środowisk
+Dla każdego projektu zaleca się tworzenie osobnego wirtualnego środowiska:
+pyenv virtualenv 3.12.8 genimageflux
+pyenv activate genimageflux
